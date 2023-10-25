@@ -90,5 +90,24 @@
             </fieldset>
           </form>
     </section>
+    <section id="svg">
+        <h2>Drawing a star</h2>
+        <svg width="300" height="200">
+            <polygon points="100,10 40,198 190,78 10,78 160,198"
+            style="fill:rgb(154, 76, 222);stroke:rgb(154, 76, 222);stroke-width:5;" />
+          </svg>
+    </section>
+    <section id="canvas">
+        <h2>Drawing a circle</h2>
+        <canvas id="myCanvas" width="200" height="100"></canvas>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+            ctx.stroke();
+            ctx.fill(rbg(154,76,222));
+            </script>
+    </section>
 </body>
 </html>

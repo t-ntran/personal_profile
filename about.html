@@ -35,13 +35,6 @@
             </ul>
           </nav>
         </header>
-        <picture>
-            <img src="headshot.jpg" alt="headshot" width="200" height="250">
-        </picture>
-        <p>My name is Thanh-Nha (Tanya) Tran. I am a 4th year Computer Science major at UCSD. I am also minoring in Psychology.
-            I am interested in doing front-end development work. I enjoy doing research pertaining to HCI and AI.
-        </p>
-        <br />
         <pre>
             <code>
                 public static void main (String args[]) {
@@ -49,6 +42,15 @@
                 }
             </code>
         </pre>
+        <picture>
+            <source media="(min-width:650px)" srcset="headshot.jpg">
+            <source media="(min-width:465px)" srcset="headshot.jpg">
+            <img src="headshot.jpg" alt="headshot" width="200" height="250">
+        </picture>
+        <p>My name is Thanh-Nha (Tanya) Tran. I am a 4th year Computer Science major at UCSD. I am also minoring in Psychology.
+            I am interested in doing front-end development work. I enjoy doing research pertaining to HCI and AI.
+        </p>
+        <br />
     </head>
 </body>
 </html>
