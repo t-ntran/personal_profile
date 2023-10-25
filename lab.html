@@ -79,13 +79,13 @@
     </section>
     <section id="canvas">
         <h2>Drawing a circle</h2>
-        <canvas id="GFG" width="400" height="200" style="border:2px solid #7d3030;"></canvas> 
+        <canvas id="myCanvas" width="400" height="200" style="border:2px solid #7d3030;"></canvas> 
         <script> 
-            let g = document.getElementById("GFG"); 
-            let geeks = g.getContext("2d"); 
-            geeks.shadowBlur = 20; 
-            geeks.shadowColor = "yellow"; 
-            geeks.fillStyle = "red"; 
+            let c = document.getElementById("myCanvas"); 
+            let c2 = c.getContext("2d"); 
+            c2.shadowBlur = 20; 
+            c2.shadowColor = "black"; 
+            c2.fillStyle = "purple"; 
             geeks.fillRect(30, 20, 100, 80); 
     </script> 
     </section>
