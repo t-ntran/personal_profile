@@ -78,6 +78,15 @@
     </section>
     <section id="canvas">
         <h2>Drawing a circle</h2>
+        <canvas id="GFG" width="400" height="200" style="border:2px solid #7d3030;"></canvas> 
+        <script> 
+            let g = document.getElementById("GFG"); 
+            let geeks = g.getContext("2d"); 
+            geeks.shadowBlur = 20; 
+            geeks.shadowColor = "yellow"; 
+            geeks.fillStyle = "red"; 
+            geeks.fillRect(30, 20, 100, 80); 
+    </script> 
     </section>
     <section>
         <h2>Einstein's famous formula</h2>
@@ -95,15 +104,5 @@
             </msup>
           </math>
     </section>
-    <h2>Drawing a circle2</h2>
-        <canvas id="GFG" width="400" height="200" style="border:2px solid #7d3030;"></canvas> 
-            <script> 
-                let g = document.getElementById("GFG"); 
-                let geeks = g.getContext("2d"); 
-                geeks.shadowBlur = 20; 
-                geeks.shadowColor = "yellow"; 
-                geeks.fillStyle = "red"; 
-                geeks.fillRect(30, 20, 100, 80); 
-        </script> 
 </body>
 </html>
