@@ -99,15 +99,16 @@
     </section>
     <section id="canvas">
         <h2>Drawing a circle</h2>
-        <canvas id="myCanvas" width="200" height="100"></canvas>
+        <canvas id="GFG" width="400" height="200" style="border:2px solid #d3d3d3;"></canvas> 
+        <script> 
+             
+            let g = document.getElementById("GFG"); 
+            let geeks = g.getContext("2d"); 
+            geeks.beginPath(); 
+            geeks.arc(200, 100, 50, 0, 2 * Math.PI); 
+            geeks.stroke(); 
+        </script> 
     </section>
-    <script>
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
-        ctx.beginPath();
-        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
-        ctx.stroke();
-    </script>
     <section>
         <h2>Einstein's famous formula</h2>
         <math xmlns="http://www.w3.org/1998/Math/MathML">
