@@ -36,6 +36,59 @@
             </ul>
           </nav>
         </header>
-        </body>
     </head>
+    <section id="You">
+        <form>
+            <fieldset>
+              <legend>Get to Know You!</legend>
+              <label>Select your coding expertise:</label>
+              <input type="radio" id="beginner" name="expertise" />
+              <label for="beginner">Beginner</label>
+              <input type="radio" id="intermediate" name="expertise" />
+              <label for="intermediate">Intermediate</label>
+              <input type="radio" id="advanced" name="expertise" />
+              <label for="advanced">Advanced</label>
+              <br />
+              <label for="language">Select your favorite programming language:</label>
+              <select id="language">
+                <optgroup label="Front-end">
+                  <option value="HTML">HTML</option>
+                  <option value="CSS">CSS</option>
+                  <option value="JavaScript">JavaScript</option>
+                  <option value="React">React</option>
+                  <option value="Angular">Angular</option>
+                  <option value="jQuery">jQuery</option>
+                </optgroup>
+                <optgroup label="Back-end">
+                  <option value="python">Python</option>
+                  <option value="java">Java</option>
+                  <option value="c">C</option>
+                  <option value="c++">C++</option>
+                  <option value="C#">C#</option>
+                  <option value="Rust">Rust</option>
+                  <option value="Haskell">Haskell</option>
+                </optgroup>
+              </select>
+              <br />
+              <label for="colors">Select your favorite color:</label>
+              <datalist id="colors">
+                <option value="Red"></option>
+                <option value="Orange"></option>
+                <option value="Yellow"></option>
+                <option value="Green"></option>
+                <option value="Blue"></option>
+                <option value="Purple"></option>
+                <option value="White"></option>
+                <option value="Black"></option>
+              </datalist>
+              <input list="colors" id="colors" />
+              <br />
+              <label for="sample-text-area">Add any comments:</label>
+              <textarea id="sample-text-area">Your comment here...</textarea>
+              <br />
+              <button type="submit">Save</button>
+            </fieldset>
+          </form>
+    </section>
+</body>
 </html>
